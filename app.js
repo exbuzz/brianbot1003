@@ -1,4 +1,8 @@
 // This loads the environment variables from the .env file
+
+console.log("here we are");
+
+/*
 require('dotenv-extended').load();
 
 var express = require('express');
@@ -62,3 +66,5 @@ var port = process.env.port || process.env.PORT || 3978;
 app.listen(port, function () {
   console.log('Web Server listening on port %s', port);
 });
+
+*/
