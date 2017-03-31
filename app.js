@@ -14,6 +14,10 @@
 // 
 // console.log('finished');
 
+process.on('uncaughtException', function (err) {
+    fs.writeFileSync("test.txt",  err, "utf8");    
+})
+
 require('dotenv-extended').load();
 
 var express = require('express');
