@@ -1,25 +1,25 @@
 // This loads the environment variables from the .env file
 
-var http = require('http');
-var fs = require('fs');
+// var http = require('http');
+// var fs = require('fs');
+// 
+// process.on('uncaughtException', function (err) {
+//     fs.writeFileSync("test.txt",  err, "utf8");    
+// })
+// 
+// http.createServer(function (req, res) {
+//     res.writeHead(200, {'Content-Type': 'text/plain'});
+//     res.end('Hello, world! [helloworld sample]');
+// }).listen(process.env.PORT || 8888);  
+// 
+// console.log('finished');
 
-process.on('uncaughtException', function (err) {
-    fs.writeFileSync("test.txt",  err, "utf8");    
-})
-
-http.createServer(function (req, res) {
-    res.writeHead(200, {'Content-Type': 'text/plain'});
-    res.end('Hello, world! [helloworld sample]');
-}).listen(process.env.PORT || 8888);  
-
-console.log('finished');
-
-/*
 require('dotenv-extended').load();
 
 var express = require('express');
 var path = require('path');
 var favicon = require('serve-favicon');
+/*
 
 // Web app
 var app = express();
